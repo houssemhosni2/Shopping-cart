@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <h2 class="ti">T-shirt</h2>
+    <div class="container">
+        <div class="articles">
+            <div>
+                <img src="images/tee.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand1">Nike</h3>
+                    <h4 id="price1">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity1" name="quantity1" min="1" max="99" value="1">
+                    <select id="size1" name="size1" onclick="deleteE('message1')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    <div>
+                        <button class="addTo" onclick="add(1)">Add</button>
+                    </div>
+                </div>
+                <p id="message1"></p>
+            </div>
+            <div>
+                <img src="images/levis.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand2">Levi's</h3>
+                    <h4 id="price2">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity2" name="quantity2" min="1" max="99" value="1">
+                    <select id="size2" name="size2" onclick="deleteE('message2')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    <div>
+                        <button class="addTo" onclick="add(2)">Add</button>
+                    </div>
+                </div>
+                <p id="message2"></p>
+            </div>
+            <div>
+                <img src="images/puma.jfif">
+                <div class="prod">
+                    <h3 class="tit" id="brand3">Puma</h3>
+                    <h4 id="price3">16.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity3" name="quantity3" min="1" max="99" value="1">
+                    <select id="size3" name="size3" onclick="deleteE('message3')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    <div>
+                        <button class="addTo" onclick="add(3)">Add</button>
+                    </div>
+                </div>
+                <p id="message3"></p>
+            </div>
+            <div>
+                <img src="images/aa.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand4">Adidas</h3>
+                    <h4 id="price4">18.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity4" name="quantity4" min="1" max="99" value="1">
+                    <select id="size4" name="size4" onclick="deleteE('message4')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    <div>
+                        <button class="addTo" onclick="add(4)">Add</button>
+                    </div>
+                </div>
+                <p id="message4"></p>
+            </div>
+        </div>
+        <div class="cart">
+            <h3 class="tit">My articles</h3>
+            <!-- list of the articles in the cart -->
+            <ul id="items">
+            </ul> 
+            <h3 id="total" style="text-align: right;">Total: 0 $</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
